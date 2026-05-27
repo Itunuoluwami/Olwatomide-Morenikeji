@@ -76,12 +76,12 @@ const GallerySection = () => {
         </motion.div>
 
         {/* Pill tabs */}
-        <div className="flex justify-center gap-2 sm:gap-3 mb-12 px-2">
+        <div className="flex justify-center gap-1.5 sm:gap-3 mb-12 px-4">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`font-body text-[10px] sm:text-xs tracking-[0.1em] sm:tracking-[0.15em] uppercase px-3 py-2 sm:px-6 sm:py-2.5 rounded-full transition-all duration-300 whitespace-nowrap ${
+              className={`font-body text-[9px] sm:text-xs tracking-[0.08em] sm:tracking-[0.15em] uppercase px-2.5 py-2 sm:px-6 sm:py-2.5 rounded-full transition-all duration-300 whitespace-nowrap ${
                 activeTab === tab.id
                   ? "gold-gradient text-foreground shadow-md"
                   : "bg-muted text-muted-foreground hover:bg-muted/80"
