@@ -33,8 +33,9 @@ const WishesSection = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [newName, setNewName] = useState("");
   const [newMessage, setNewMessage] = useState("");
-  const visible = 3;
-  const maxStart = Math.max(0, wishes.length - visible);
+  const visibleDesktop = 3;
+  const visibleMobile = 1;
+  const maxStart = Math.max(0, wishes.length - visibleDesktop);
 
   const handleSubmit = () => {
     if (!newName.trim() || !newMessage.trim()) return;
@@ -53,7 +54,7 @@ const WishesSection = () => {
 
   return (
     <section className="section-padding romantic-gradient-bg">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -66,16 +67,16 @@ const WishesSection = () => {
 
         {/* Carousel */}
         <div className="relative">
-          <div className="flex gap-6 overflow-hidden">
-            {wishes.slice(current, current + visible).map((wish, i) => (
+          <div className="flex gap-4 md:gap-6 overflow-hidden">
+            {wishes.slice(current, current + visibleDesktop).map((wish, i) => (
               <motion.div
                 key={wish.name + wish.date + i}
                 initial={{ opacity: 0, x: 40 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.1 }}
-                className="flex-1 min-w-0"
+                className="w-full md:flex-1 md:min-w-0 flex-shrink-0"
               >
-                <div className="glass-card rounded-xl p-8 h-full">
+                <div className="glass-card rounded-xl p-6 md:p-8 h-full">
                   <div className="w-12 h-12 rounded-full gold-gradient flex items-center justify-center font-body text-sm font-semibold text-foreground mb-4">
                     {wish.avatar}
                   </div>
