@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -27,15 +27,28 @@ const getAvatar = (name: string) => {
     : name.slice(0, 2).toUpperCase();
 };
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window !== "undefined") return window.innerWidth < 768;
+    return false;
+  });
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+  return isMobile;
+}
+
 const WishesSection = () => {
   const [wishes, setWishes] = useState(initialWishes);
   const [current, setCurrent] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
   const [newName, setNewName] = useState("");
   const [newMessage, setNewMessage] = useState("");
-  const visibleDesktop = 3;
-  const visibleMobile = 1;
-  const maxStart = Math.max(0, wishes.length - visibleDesktop);
+  const isMobile = useIsMobile();
+  const visible = isMobile ? 1 : 3;
+  const maxStart = Math.max(0, wishes.length - visible);
 
   const handleSubmit = () => {
     if (!newName.trim() || !newMessage.trim()) return;
