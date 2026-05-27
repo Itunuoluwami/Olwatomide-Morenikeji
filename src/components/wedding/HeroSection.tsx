@@ -103,10 +103,10 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 1 }}
-          className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-cream font-light tracking-wide leading-tight"
+          className="font-display text-2xl sm:text-4xl md:text-7xl lg:text-8xl text-cream font-light tracking-wide leading-tight"
         >
           Ibukunolwa
-          <span className="font-script text-3xl sm:text-4xl md:text-5xl lg:text-6xl mx-3 md:mx-6 text-gold-light">&</span>
+          <span className="font-script text-xl sm:text-3xl md:text-5xl lg:text-6xl mx-1 sm:mx-3 md:mx-6 text-gold-light">&</span>
           Oluwatomide
         </motion.h1>
 
