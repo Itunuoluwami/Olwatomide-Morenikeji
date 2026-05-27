@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -27,13 +27,27 @@ const getAvatar = (name: string) => {
     : name.slice(0, 2).toUpperCase();
 };
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window !== "undefined") return window.innerWidth < 768;
+    return false;
+  });
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+  return isMobile;
+}
+
 const WishesSection = () => {
   const [wishes, setWishes] = useState(initialWishes);
   const [current, setCurrent] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
   const [newName, setNewName] = useState("");
   const [newMessage, setNewMessage] = useState("");
-  const visible = 3;
+  const isMobile = useIsMobile();
+  const visible = isMobile ? 1 : 3;
   const maxStart = Math.max(0, wishes.length - visible);
 
   const handleSubmit = () => {
@@ -53,7 +67,7 @@ const WishesSection = () => {
 
   return (
     <section className="section-padding romantic-gradient-bg">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -66,16 +80,16 @@ const WishesSection = () => {
 
         {/* Carousel */}
         <div className="relative">
-          <div className="flex gap-6 overflow-hidden">
+          <div className="flex gap-4 md:gap-6 overflow-hidden">
             {wishes.slice(current, current + visible).map((wish, i) => (
               <motion.div
                 key={wish.name + wish.date + i}
                 initial={{ opacity: 0, x: 40 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.1 }}
-                className="flex-1 min-w-0"
+                className="w-full md:flex-1 md:min-w-0 flex-shrink-0"
               >
-                <div className="glass-card rounded-xl p-8 h-full">
+                <div className="glass-card rounded-xl p-6 md:p-8 h-full">
                   <div className="w-12 h-12 rounded-full gold-gradient flex items-center justify-center font-body text-sm font-semibold text-foreground mb-4">
                     {wish.avatar}
                   </div>
