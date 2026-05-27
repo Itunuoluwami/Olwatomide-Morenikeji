@@ -81,7 +81,7 @@ const WishesSection = () => {
         {/* Carousel */}
         <div className="relative">
           <div className="flex gap-4 md:gap-6 overflow-hidden">
-            {wishes.slice(current, current + visibleDesktop).map((wish, i) => (
+            {wishes.slice(current, current + visible).map((wish, i) => (
               <motion.div
                 key={wish.name + wish.date + i}
                 initial={{ opacity: 0, x: 40 }}
