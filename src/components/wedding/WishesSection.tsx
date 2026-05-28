@@ -6,13 +6,10 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
-const initialWishes = [
-  { name: "Adebayo Oladele", message: "May your union be filled with endless love, joy, and God's abundant blessings. Congratulations!", date: "March 2026", avatar: "AO" },
-  { name: "Funke Adeyemi", message: "Two beautiful souls becoming one! Wishing you a lifetime of happiness and togetherness. ❤️", date: "March 2026", avatar: "FA" },
-  { name: "Chidi Nwosu", message: "God has truly written a beautiful love story for you both. May your marriage be a testimony!", date: "February 2026", avatar: "CN" },
-  { name: "Blessing Eze", message: "So happy for you both! Your love inspires everyone around you. Here's to forever! 🥂", date: "February 2026", avatar: "BE" },
-  { name: "Tunde Bakare", message: "What God has joined together, let no man put asunder. Congratulations to the beautiful couple!", date: "January 2026", avatar: "TB" },
-];
+import wishesData from "@/data/wishes.json";
+
+const initialWishes = wishesData;
+
 
 const getMonthYear = () => {
   const d = new Date();
