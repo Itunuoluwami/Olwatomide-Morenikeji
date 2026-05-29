@@ -66,7 +66,7 @@ const HeroSection = () => {
           muted
           playsInline
           preload="auto"
-          aria-label="Ibukunolwa and Oluwatomide engagement"
+          aria-label="Ibukunoluwa and Oluwatomide engagement"
           className="w-full h-full object-cover"
         >
           <source src="/hero.mp4" type="video/mp4" />
@@ -105,7 +105,7 @@ const HeroSection = () => {
           transition={{ delay: 0.7, duration: 1 }}
           className="font-display text-2xl sm:text-4xl md:text-7xl lg:text-8xl text-cream font-light tracking-wide leading-tight"
         >
-          Ibukunolwa
+          Ibukunoluwa
           <span className="font-script text-xl sm:text-3xl md:text-5xl lg:text-6xl mx-1 sm:mx-3 md:mx-6 text-gold-light">&</span>
           Oluwatomide
         </motion.h1>
