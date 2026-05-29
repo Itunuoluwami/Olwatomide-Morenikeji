@@ -13,6 +13,7 @@ const events = [
     time: "8:00 AM",
     venue: "Eniola Rentals Hall",
     address: "Plot 1, Abuja Zone, Ijaiye Housing Estate, Pen Cinema, Agege, Lagos",
+    note: "Strictly for family members",
   },
   {
     icon: Church,
