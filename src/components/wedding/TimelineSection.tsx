@@ -76,6 +76,11 @@ const TimelineSection = () => {
                   <p className="font-body text-sm text-muted-foreground mb-3">{event.time}</p>
                   <p className="font-body text-sm font-medium text-foreground">{event.venue}</p>
                   <p className="font-body text-xs text-muted-foreground mt-1">{event.address}</p>
+                  {event.note && (
+                    <p className="font-body text-xs text-gold mt-3 font-semibold tracking-wide uppercase">
+                      {event.note}
+                    </p>
+                  )}
                   {event.hasAccessCard && (
                     <Button
                       variant="gold-outline"
