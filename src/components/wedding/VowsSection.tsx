@@ -69,7 +69,7 @@ Beyond the flutter of my heart and the butterflies in my belly. I promise to cho
 Give me your hands and I will love you forever.`}
         />
         <VowCard
-          name="Ibukunolwa"
+          name="Ibukunoluwa"
           image={brideImg}
           vow={`Tèmi, I love you and always will.
 

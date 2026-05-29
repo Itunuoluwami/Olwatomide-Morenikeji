@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Heart } from "lucide-react";
 
-const marqueeText = "Ibukunolwa ❤️ Oluwatomide — #Motirenikejiminiakokotemi'26 — ";
+const marqueeText = "Ibukunoluwa ❤️ Oluwatomide — #Motirenikejiminiakokotemi'26 — ";
 
 const WeddingFooter = () => (
   <footer className="footer-gradient overflow-hidden">

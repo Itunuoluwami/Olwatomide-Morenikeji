@@ -15,7 +15,7 @@ const GiftSection = () => {
 
   const details = [
     { label: "BANK NAME", value: "First Bank of Nigeria", field: "Bank Name" },
-    { label: "ACCOUNT NAME", value: "Oshonuga Ibukunolwa Sarah", field: "Account Name" },
+    { label: "ACCOUNT NAME", value: "Oshonuga Ibukunoluwa Sarah", field: "Account Name" },
     { label: "ACCOUNT NUMBER", value: "3196933149", field: "Account Number" },
   ];
 

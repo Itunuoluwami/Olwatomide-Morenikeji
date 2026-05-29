@@ -114,7 +114,7 @@ const RSVPSection = () => {
                   <SelectValue placeholder="Who are you coming for?" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="bride">Bride (Ibukunolwa)</SelectItem>
+                  <SelectItem value="bride">Bride (Ibukunoluwa)</SelectItem>
                   <SelectItem value="groom">Groom (Oluwatomide)</SelectItem>
                   <SelectItem value="both">Both</SelectItem>
                 </SelectContent>
