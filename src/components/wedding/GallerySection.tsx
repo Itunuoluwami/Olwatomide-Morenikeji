@@ -10,6 +10,8 @@ import families2 from "@/assets/gallery-families-2.jpg";
 import families3 from "@/assets/gallery-families-3.jpg";
 import families4 from "@/assets/gallery-families-4.jpg";
 import families5 from "@/assets/gallery-families-5.jpg";
+import families6 from "@/assets/gallery-families-6.jpg";
+import families7 from "@/assets/gallery-families-7.jpg";
 import journey1 from "@/assets/gallery-journey-1.jpg";
 import journey2 from "@/assets/gallery-journey-2.jpg";
 import journey3 from "@/assets/gallery-journey-3.jpg";
@@ -38,6 +40,8 @@ const tabs: { id: string; label: string; images: GalleryImage[] }[] = [
       { src: families3, caption: "Beautiful bride", span: "col-span-1 row-span-1" },
       { src: families4, caption: "Together forever", span: "col-span-1 row-span-1" },
       { src: families5, caption: "Family blessings", span: "col-span-1 row-span-1" },
+      { src: families6, caption: "Brothers and sister", span: "col-span-1 row-span-1" },
+      { src: families7, caption: "Family love", span: "col-span-1 row-span-1" },
     ],
   },
   {
