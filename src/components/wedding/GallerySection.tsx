@@ -38,7 +38,6 @@ const tabs: { id: string; label: string; images: GalleryImage[] }[] = [
       { src: families1, caption: "The happy couple", span: "col-span-1 row-span-1" },
       { src: families2, caption: "Our families united", span: "sm:col-span-2 row-span-1" },
       { src: families3, caption: "Beautiful bride", span: "col-span-1 row-span-1" },
-      { src: families4, caption: "Together forever", span: "col-span-1 row-span-1" },
       { src: families5, caption: "Family blessings", span: "col-span-1 row-span-1" },
       { src: families6, caption: "Brothers and sister", span: "col-span-1 row-span-1" },
       { src: families7, caption: "Family love", span: "col-span-1 row-span-1" },
