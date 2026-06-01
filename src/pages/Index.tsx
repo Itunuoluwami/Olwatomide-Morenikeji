@@ -11,6 +11,7 @@ import GiftSection from "@/components/wedding/GiftSection";
 import FAQSection from "@/components/wedding/FAQSection";
 import WeddingFooter from "@/components/wedding/WeddingFooter";
 import FloatingAccessCardButton from "@/components/wedding/FloatingAccessCardButton";
+import BackgroundMusicPlayer from "@/components/wedding/BackgroundMusicPlayer";
 
 const Index = () => {
   return (
@@ -28,6 +29,7 @@ const Index = () => {
       <FAQSection />
       <WeddingFooter />
       <FloatingAccessCardButton />
+      <BackgroundMusicPlayer />
     </div>
   );
 };
