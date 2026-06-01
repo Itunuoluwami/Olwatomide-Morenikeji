@@ -57,7 +57,7 @@ const VowsSection = () => (
           name="Oluwatomide"
           image={groomImg}
           vow={`Ibukunoluwa, shortly before I met you, I prayed to God for a wife and from the first time we spoke, I knew this was it for me. 
-God didn't just bless me with you because I wanted you, he blessed me with you because I didn't know I needed you.
+God didn't just bless me with you because I wanted you, He blessed me with you because He knows I need you.
 
 
 Enikejimi, you are my forever. I have been blessed all my life but you are a double portion of God's goodness to me. All my life, I have lived my life for myself but from today I lay down my life to serving you and our family in alignment to God's will. I promise to make God proud by loving you right. And I hope that when you stare at me you remember Calvary. On days when I lack wisdom I will lean on God, and God will be the center of our home.
@@ -77,7 +77,7 @@ As I prayed the same prayers for almost a year before your arrival, according to
 
 You love me in love and complete me in ways I never knew possible. From this day forth, I promise to listen to you and learn from you, to support you and accept your support. 
 
-I love you. I prayed that God would lead me to this choice, to you as my husband. I praise him this day, July 11th 2026 as his will is being fulfilled. Through the pressures of the present and the uncertainties of the future, I promise you and him my faithfulness, to stand beside you through all of life's experiences as you follow God.
+I love you. I prayed that God would lead me to this choice, to you as my husband. I praise Him this day, July 11th 2026 as His will is being fulfilled. Through the pressures of the present and the uncertainties of the future, I promise you and Him my faithfulness, to stand beside you through all of life's experiences as you follow God.
 
 I love you, Mine❤️`}
           reverse
