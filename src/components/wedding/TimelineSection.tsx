@@ -23,6 +23,7 @@ const events = [
     time: "11:00 AM",
     venue: "The New Covenant Baptist Church",
     address: "No 1, Garden Close, Low Cost Housing Estate, Pencinema, Agege, Lagos State",
+    note: "Everyone is welcome",
   },
   {
     icon: Wine,
@@ -32,7 +33,7 @@ const events = [
     time: "2:00 PM",
     venue: "Eniola Rentals Hall",
     address: "Plot 1, Abuja Zone, Ijaiye Housing Estate, Pen Cinema, Agege, Lagos",
-    
+    note: "Entry by access card",
   },
 ];
 
