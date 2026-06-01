@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     q: "Do I need an access card to attend the reception?",
-    a: "Yes, entry to the reception is strictly by access card. Access cards are reserved for invited guests only and will be distributed accordingly. We kindly ask that you present your card at the entrance — thank you for understanding!",
+    a: "Yes, entry to the reception is strictly by access card. Access cards are limited and can only admit one. We kindly ask that you present your card at the entrance — thank you for understanding!",
   },
   {
     q: "Can I bring a plus one?",
