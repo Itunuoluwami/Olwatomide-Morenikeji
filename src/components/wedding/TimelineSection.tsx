@@ -81,16 +81,6 @@ const TimelineSection = () => {
                       {event.note}
                     </p>
                   )}
-                  {event.hasAccessCard && (
-                    <Button
-                      variant="gold-outline"
-                      size="sm"
-                      className="mt-4"
-                      onClick={() => setAccessCardOpen(true)}
-                    >
-                      Get Access Card
-                    </Button>
-                  )}
                 </div>
               </div>
 
