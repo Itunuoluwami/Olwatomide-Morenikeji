@@ -32,7 +32,7 @@ const events = [
     time: "2:00 PM",
     venue: "Eniola Rentals Hall",
     address: "Plot 1, Abuja Zone, Ijaiye Housing Estate, Pen Cinema, Agege, Lagos",
-    hasAccessCard: true,
+    
   },
 ];
 
@@ -80,16 +80,6 @@ const TimelineSection = () => {
                     <p className="font-body text-xs text-gold mt-3 font-semibold tracking-wide uppercase">
                       {event.note}
                     </p>
-                  )}
-                  {event.hasAccessCard && (
-                    <Button
-                      variant="gold-outline"
-                      size="sm"
-                      className="mt-4"
-                      onClick={() => setAccessCardOpen(true)}
-                    >
-                      Get Access Card
-                    </Button>
                   )}
                 </div>
               </div>
