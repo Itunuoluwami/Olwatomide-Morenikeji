@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     q: "Do I need an access card to attend the reception?",
-    a: "Yes, access cards are required for entry to the reception venue. You'd be given your access card on the day of the event.",
+    a: "Yes, entry to the reception is strictly by access card. Access cards are reserved for invited guests only and will be distributed accordingly. We kindly ask that you present your card at the entrance — thank you for understanding!",
   },
   {
     q: "Can I bring a plus one?",
