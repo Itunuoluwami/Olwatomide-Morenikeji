@@ -58,7 +58,7 @@ const FloatingAccessCardButton = () => {
       </motion.button>
 
       <Dialog open={accessCardOpen} onOpenChange={setAccessCardOpen}>
-        <DialogContent className="glass-card border-gold/20 max-w-lg">
+        <DialogContent className="glass-card border-gold/20 max-w-[90vw] md:max-w-lg">
           <DialogHeader>
             <DialogTitle className="font-display text-2xl text-center">Wedding Invitation Card</DialogTitle>
           </DialogHeader>
