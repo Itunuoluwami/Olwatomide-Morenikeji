@@ -40,7 +40,7 @@ const VowCard = ({
 );
 
 const VowsSection = () => (
-  <section id="vows" className="section-padding bg-background">
+  <section id="vows" className="pb-12 md:pb-30 px-6 md:px-12 pt-6 md:pt-12 bg-background">
     <div className="max-w-6xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
