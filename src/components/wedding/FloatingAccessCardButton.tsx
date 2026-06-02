@@ -71,18 +71,18 @@ const FloatingAccessCardButton = () => {
             <div className="flex gap-3 justify-center w-full">
               <Button
                 variant="gold-outline"
-                className="flex-1 gap-2"
+                className="gap-2 text-xs px-3 py-2"
                 onClick={handleDownloadPNG}
               >
-                <FileImage className="w-4 h-4" />
+                <FileImage className="w-3 h-3" />
                 Download PNG
               </Button>
               <Button
                 variant="gold-outline"
-                className="flex-1 gap-2"
+                className="gap-2 text-xs px-3 py-2"
                 onClick={handleDownloadPDF}
               >
-                <Download className="w-4 h-4" />
+                <Download className="w-3 h-3" />
                 Download PDF
               </Button>
             </div>
