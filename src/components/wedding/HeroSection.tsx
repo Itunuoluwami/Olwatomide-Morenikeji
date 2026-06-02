@@ -57,7 +57,7 @@ const HeroSection = () => {
   const scrollToGifts = () => document.querySelector("#gifts")?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <section id="hero" className="relative h-screen overflow-hidden">
+    <section id="hero" className="relative h-[90vh] md:h-screen overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <video
