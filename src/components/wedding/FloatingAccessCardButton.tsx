@@ -68,7 +68,7 @@ const FloatingAccessCardButton = () => {
               alt="Wedding Invitation Card"
               className="w-2/3 max-w-xs mx-auto rounded-lg shadow-lg"
             />
-            <div className="flex gap-3 w-full">
+            <div className="flex gap-3 justify-center w-full">
               <Button
                 variant="gold-outline"
                 className="flex-1 gap-2"
