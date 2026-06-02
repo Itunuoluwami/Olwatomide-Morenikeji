@@ -66,7 +66,7 @@ const FloatingAccessCardButton = () => {
             <img
               src={accessCardImage}
               alt="Wedding Invitation Card"
-              className="w-full rounded-lg shadow-lg"
+              className="w-2/3 max-w-xs mx-auto rounded-lg shadow-lg"
             />
             <div className="flex gap-3 w-full">
               <Button
