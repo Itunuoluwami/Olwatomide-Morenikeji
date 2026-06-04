@@ -12,6 +12,18 @@ const BackgroundMusicPlayer = () => {
     audio.volume = 0.5;
     audio.preload = "auto";
     audioRef.current = audio;
+
+    const attemptAutoplay = async () => {
+      try {
+        await audio.play();
+        setPlaying(true);
+      } catch {
+        // Autoplay blocked by browser — user must click to start
+      }
+    };
+
+    attemptAutoplay();
+
     return () => {
       audio.pause();
       audioRef.current = null;
