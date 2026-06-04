@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "What is the dress code?",
-    a: "Our wedding colors are Blush Pink, Emerald Green and Sage Green. We encourage guests to dress in these colors or complementary tones. Traditional attire is welcome!",
+    a: "Our wedding colors are Blush Pink, Olive Green and Sage Green. We encourage guests to dress in these colors or complementary tones. Traditional attire is welcome!",
   },
   {
     q: "What time should guests arrive?",
